@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance System - Tutorial 2</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Your JS file -->
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+    <h1>Attendance Management</h1>
+
+    <!-- Search -->
+    <input type="text" id="searchInput" placeholder="Search by name...">
+
+    <button id="sortAbs">Sort by Absences (Ascending)</button>
+    <button id="sortPar">Sort by Participation (Descending)</button>
+    <p id="sortMessage"></p>
+
+    <br><br>
+
+    <!-- Attendance Table -->
+    <table id="attendanceTable" border="1">
+        <thead>
+            <tr>
+                <th>Last Name</th>
+                <th>First Name</th>
+
+                <th>S1</th><th>S2</th><th>S3</th><th>S4</th><th>S5</th><th>S6</th>
+                <th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th><th>P6</th>
+
+                <th>Abs</th>
+                <th>Par</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ahmed</td>
+                <td>Sara</td>
+
+                <td>✓</td><td>✓</td><td></td><td></td><td></td><td></td>
+                <td>✓</td><td></td><td></td><td></td><td></td><td></td>
+
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Yacine</td>
+                <td>Ali</td>
+
+                <td>✓</td><td></td><td>✓</td><td>✓</td><td>✓</td><td>✓</td>
+                <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td></td><td></td>
+
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Houcine</td>
+                <td>Rania</td>
+
+                <td>✓</td><td>✓</td><td></td><td>✓</td><td>✓</td><td></td>
+                <td></td><td></td><td></td><td></td><td></td><td></td>
+
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <button id="highlightBtn">Highlight Excellent Students</button>
+    <button id="resetBtn">Reset Colors</button>
+
+    <br><br><hr><br>
+
+    <!-- Add Student Form -->
+    <h2>Add Student</h2>
+
+    <form id="studentForm">
+        ID: <input type="text" id="studentID"><span class="error"></span><br><br>
+
+        Last Name: <input type="text" id="lastName"><span class="error"></span><br><br>
+
+        First Name: <input type="text" id="firstName"><span class="error"></span><br><br>
+
+        Email: <input type="text" id="email"><span class="error"></span><br><br>
+
+        <button type="submit">Add Student</button>
+    </form>
+
+    <p id="confirmation"></p>
+
+    <br><br><hr><br>
+
+    <!-- Report Section -->
+    <button id="showReport">Show Report</button>
+
+    <div id="reportSection"></div>
+
+</body>
+</html>
