@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 8px;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.green {
+    background-color: #c8f7c5;
+}
+
+.yellow {
+    background-color: #fff5a6;
+}
+
+.red {
+    background-color: #ffb3b3;
+}
+
+.hover {
+    background-color: #d9eaff !important;
+}
